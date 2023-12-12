@@ -1,31 +1,28 @@
-<?php
-require_once 'config.php';
+<?php include 'includes/header.php'; ?>
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    // Validate and sanitize form data (add more validation as needed)
-    $name = mysqli_real_escape_string($conn, $_POST['name']);
-    $email = mysqli_real_escape_string($conn, $_POST['email']);
-    $gender = mysqli_real_escape_string($conn, $_POST['gender']);
-    $address = mysqli_real_escape_string($conn, $_POST['address']);
+<h2>Register</h2>
 
-    // Validate email format
-    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        die("Invalid email format");
-    }
+<form action="registration_process.php" method="post" enctype="multipart/form-data">
+    <label for="name">Name:</label>
+    <input type="text" name="name" required>
 
-    // Insert data into the database
-    $insert_query = "INSERT INTO subscribers (name, email, gender, address) VALUES ('$name', '$email', '$gender', '$address')";
+    <label for="email">Email:</label>
+    <input type="email" name="email" required>
 
-    if ($conn->query($insert_query) === TRUE) {
-        // Redirect to a thank you page
-        header('Location: send_email.php');
-    } else {
-        echo "Error: " . $insert_query . "<br>" . $conn->error;
-    }
-} else {
-    // Redirect to the registration page if accessed directly
-    header('Location: register.php');
-}
+    <label for="gender">Gender:</label>
+    <select name="gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+    </select>
 
-$conn->close();
-?>
+    <label for="address">Address:</label>
+    <input type="text" name="address">
+
+    <label for="profile_picture">Profile Picture:</label>
+    <input type="file" name="profile_picture">
+
+    <input type="submit" value="Register">
+</form>
+
+<?php include 'includes/footer.php'; ?>
+
