@@ -1,10 +1,6 @@
-<?php include 'includes/header.php'; ?>
+<?php
+// Redirect to the home page (home.php) when users visit the root of the website
+header("Location: home.php");
+exit();
+?>
 
-<h2>Welcome to HRMS</h2>
-
-<a href="pages/about.php">About</a>
-<a href="pages/services.php">Services</a>
-<a href="pages/contact.php">Contact</a>
-<a href="pages/register.php">Register</a>
-
-<?php include 'includes/footer.php'; ?>

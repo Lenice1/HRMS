@@ -1,5 +1,5 @@
 <?php
-require_once 'config.php';
+require_once '../config.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Validate and sanitize form data
@@ -46,7 +46,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 }
 ?>
 
-<?php include 'includes/header.php'; ?>
+<?php include '../includes/header.php'; ?>
 
 <h2>Register</h2>
 
@@ -72,4 +72,4 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <input type="submit" value="Register">
 </form>
 
-<?php include 'includes/footer.php'; ?>
+<?php include '../includes/footer.php'; ?>
