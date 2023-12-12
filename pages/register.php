@@ -50,26 +50,53 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 <h2>Register</h2>
 
-<form action="register.php" method="post" enctype="multipart/form-data">
-    <label for="name">Name:</label>
-    <input type="text" name="name" required>
+<?php include 'home.php'; ?>
 
-    <label for="email">Email:</label>
-    <input type="email" name="email" required>
+<!-- Content Section -->
+<section class="content">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <h2 class="mb-4">Register for HRMS</h2>
 
-    <label for="gender">Gender:</label>
-    <select name="gender">
-        <option value="male">Male</option>
-        <option value="female">Female</option>
-    </select>
+                <!-- Registration Form -->
+                <form action="process_registration.php" method="post">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Full Name</label>
+                        <input type="text" class="form-control" id="name" name="name" required>
+                    </div>
 
-    <label for="address">Address:</label>
-    <input type="text" name="address">
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
 
-    <label for="profile_picture">Profile Picture:</label>
-    <input type="file" name="profile_picture">
+                    <div class="mb-3">
+                        <label for="gender" class="form-label">Gender</label>
+                        <select class="form-select" id="gender" name="gender" required>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
 
-    <input type="submit" value="Register">
-</form>
+                    <div class="mb-3">
+                        <label for="address" class="form-label">Address</label>
+                        <textarea class="form-control" id="address" name="address" rows="3" required></textarea>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="profilePicture" class="form-label">Profile Picture</label>
+                        <input type="file" class="form-control" id="profilePicture" name="profilePicture">
+                        <small class="form-text text-muted">Upload a profile picture (optional).</small>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
 
 <?php include '../includes/footer.php'; ?>
