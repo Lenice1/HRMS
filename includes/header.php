@@ -4,19 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Your Website Title</title>
+    <title>Hospital Registration Management System</title>
 </head>
 <body>
     <header>
-        <h1>Your Website</h1>
+        <h1>Hospital Registration Management System</h1>
     </header>
     <nav>
         <a href="index.php">Home</a>
         <a href="about.php">About</a>
         <a href="services.php">Services</a>
         <a href="contact.php">Contact</a>
+        <a href="register.php">Register</a>
         <?php if (isset($_SESSION['admin'])): ?>
+            <a href="admin_panel.php">Admin Panel</a>
             <span class="admin-welcome">Welcome, Admin!</span>
+            <a href="logout.php">Logout</a>
         <?php endif; ?>
     </nav>
     <section>
