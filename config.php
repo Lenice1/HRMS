@@ -1,8 +1,8 @@
 <?php
-$host = "localhost"; // Change this if your database is on a different host
-$user = "your_database_user";
-$password = "your_database_password";
-$database = "hrms_db"; // Updated database name
+$host = "127.0.0.1"; 
+$user = "root";
+$password = '';
+$database = "hrms_db"; 
 
 $conn = new mysqli($host, $user, $password, $database);
 
