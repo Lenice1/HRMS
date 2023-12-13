@@ -48,9 +48,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 }
 ?>
 
-<?php include '../includes/header.php'; ?>
 
-<h2>Register</h2>
 
 <?php include 'home.php'; ?>
 
