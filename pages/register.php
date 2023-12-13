@@ -62,7 +62,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <h2 class="mb-4">Register for HRMS</h2>
 
                 <!-- Registration Form -->
-                <form action="process_registration.php" method="post">
+                <form action="" method="post">
                     <div class="mb-3">
                         <label for="name" class="form-label">Full Name</label>
                         <input type="text" class="form-control" id="name" name="name" required>

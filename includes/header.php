@@ -21,19 +21,19 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                    <a class="nav-link btn btn-dark" href="home.php">Home</a>
+                    <a class="nav-link btn btn-dark" href="/HRMS/index.php">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link btn btn-dark" href="about.php">About</a>
+                    <a class="nav-link btn btn-dark" href="/HRMS/pages/about.php">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link btn btn-dark" href="services.php">Services</a>
+                    <a class="nav-link btn btn-dark" href="/HRMS/pages/services.php">Services</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link btn btn-dark" href="contact.php">Contact</a>
+                    <a class="nav-link btn btn-dark" href="/HRMS/pages/contact.php">Contact</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link btn btn-dark" href="register.php">Register</a>
+                    <a class="nav-link btn btn-dark" href="/HRMS/registration_process.php">Register</a>
                 </li>
                 <?php if (isset($_SESSION['admin'])): ?>
                     <li class="nav-item">
