@@ -1,10 +1,10 @@
 <?php
 session_start();
-require_once 'config.php';
+require_once '../config.php';
 
 // Check if the user is logged in as an admin
 if (!isset($_SESSION['admin'])) {
-    header('Location: login.php');
+    header('Location: /admin/login.php');
     exit();
 }
 
