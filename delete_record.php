@@ -10,7 +10,6 @@ if (isset($_GET['id'])) {
     header("Location: view_records.php");
     exit();
 } else {
-    // Handle the case when no ID is provided
-    // Redirect or display an error message
+    include 'includes/errormessage.php';
 }
 ?>
