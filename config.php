@@ -2,13 +2,13 @@
 $host = "127.0.0.1"; 
 $user = "root";
 $password = '';
-$database = "hrms_db"; 
+$database = "hrms_db";
 $charset = 'utf8mb4';
 
-$conn = new mysqli($host, $user, $password, $database);
+$conn = new mysqli($host, $user, $password, $database, $charset);
 
 if ($conn->connect_error) {
-    die("Connection failed: " . $db->connect_error);
+    die("Connection failed: " . $conn->connect_error);
 }
 ?>
 <?php

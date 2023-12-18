@@ -62,7 +62,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <div class="row justify-content-center">
                 <div class="col-md-6">
                     <h2 class="text-center mb-4">Admin Login</h2>
-                    <!-- Admin Login Form -->
+                    
                     <form action="admin_login_process.php" method="post">
                         <div class="mb-3">
                             <label for="adminUsername" class="form-label">Username</label>
@@ -95,7 +95,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <div class="row justify-content-center">
                 <div class="col-md-6">
                     <h2 class="text-center mb-4">User Login</h2>
-                    <!-- Admin Login Form -->
+                    
                     <form action="ser_login_process.php" method="post">
                         <div class="mb-3">
                             <label for="username" class="form-label">Username</label>

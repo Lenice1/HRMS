@@ -3,7 +3,7 @@ include 'config.php';
 
 if (isset($_GET['id'])) {
     $id = $_GET['id'];
-    $query = "DELETE FROM your_table WHERE id = $id";
+    $query = "DELETE FROM subscribers WHERE id = $id";
     $db->query($query);
 
     
