@@ -43,7 +43,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 </li>
                 <?php if (isset($_SESSION['admin'])): ?>
                     <li class="nav-item">
-                        <a class="nav-link btn btn-dark" href="admin_panel.php">Admin Panel</a>
+                        <a class="nav-link btn btn-dark" href="admin/admin_panel.php">Admin Panel</a>
                     </li>
                     <span class="admin-welcome">Welcome, Admin!</span>
                     <li class="nav-item">

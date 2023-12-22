@@ -4,8 +4,9 @@ $user = "root";
 $password = '';
 $database = "hrms_db";
 $charset = 'utf8mb4';
+$post =3306;
 
-$conn = new mysqli($host, $user, $password, $database);
+$conn = new mysqli($host, $user, $password, $database, $post);
 
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
